@@ -436,9 +436,6 @@ class Server(Role):
             with open("%s.cat" % self._path, "rb") as catfile:
                 self.trusted_cas = self.read_cat(catfile)
 
-        self.clients = {}
-        self.writers = {}
-
     def generate(self):
         '''
         generates a server private key and CSR
